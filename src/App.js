@@ -28,7 +28,7 @@ export default class App extends Component {
   componentDidUpdate(prevProps, prevState) {
     console.log("component did update");
     if (this.state.contacts !== prevState.contacts) {
-      console.log("Контакти було оновлено");
+      console.log("component was updated");
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
   }
